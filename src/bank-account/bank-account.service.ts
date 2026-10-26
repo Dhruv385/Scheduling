@@ -69,7 +69,7 @@ export class BankService {
       throw new BadRequestException('Insufficient funds');
     }
 
-    account.balance = Number((currentBalance - amount).toFixed(2));
+    account.balance = Number((currentBalance + amount).toFixed(2));
     return account.save();
   }
 

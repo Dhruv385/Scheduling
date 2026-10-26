@@ -1,16 +1,16 @@
-import { IsAlpha, IsEmail, IsNotEmpty, IsString } from 'class-validator'
+import { IsAlpha, IsEmail, IsNotEmpty, IsString } from 'class-validator';
 
 export class CreateDTO {
-    @IsEmail()
-    @IsString()
-    @IsNotEmpty()
-    email: string;
+  @IsEmail()
+  @IsString()
+  @IsNotEmpty()
+  email: string;
 
-    @IsString()
-    @IsNotEmpty()
-    name: string;
+  @IsString()
+  @IsNotEmpty()
+  name: string;
 
-    @IsAlpha()
-    @IsNotEmpty()
-    balance: number;
+  @IsAlpha()
+  @IsNotEmpty()
+  balance: number;
 }
